@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Passover Seder — Mobile Guide</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+        color: #2d2418;
+        background: #fffaf0;
+      }
+      .page {
+        width: 100%;
+        min-height: auto;
+        background: #fffdf8;
+        border: none;
+        border-bottom: 1px solid #e8dbc0;
+        padding: 16px 14px 24px;
+        position: relative;
+      }
+      .page:last-child { border-bottom: none; }
+      .cover, .back-cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(180deg, #fffaf0 0%, #f6e7c4 100%);
+        min-height: 100vh;
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+      .cover h1, .back-cover h1 {
+        font-size: 30px;
+        margin: 0 0 8px;
+        color: #5a3f14;
+      }
+      .cover h2, .back-cover h2 {
+        font-size: 22px;
+        margin: 0 0 20px;
+        color: #7a5a22;
+        font-weight: 600;
+      }
+      .subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 42rem;
+      }
+      .page-header {
+        display: block;
+        border-bottom: 2px solid #cab179;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+      }
+      .page-header h2 {
+        margin: 0;
+        font-size: 20px;
+        color: #6a4e1b;
+      }
+      .page-header .cn {
+        font-size: 18px;
+        color: #7d6431;
+        font-weight: 600;
+        margin-top: 4px;
+      }
+      .columns {
+        display: block;
+        height: auto;
+      }
+      .col {
+        border: 1px solid #e3d6bc;
+        border-radius: 8px;
+        padding: 12px 14px;
+        background: #fffefb;
+        margin-bottom: 12px;
+      }
+      .col:last-child { margin-bottom: 0; }
+      .col h3 {
+        margin: 0 0 8px;
+        font-size: 15px;
+        color: #5a3f14;
+        border-bottom: 1px solid #efe2c6;
+        padding-bottom: 4px;
+      }
+      p, li {
+        font-size: 14px;
+        line-height: 1.55;
+        margin: 0 0 8px;
+      }
+      ul, ol { margin: 6px 0 8px 18px; }
+      .verse {
+        background: #fbf5e7;
+        border-left: 4px solid #c89c42;
+        padding: 9px 11px;
+        margin: 9px 0 11px;
+        font-style: italic;
+      }
+      .callout {
+        background: #f8f0dc;
+        border: 1px solid #e4d1a1;
+        border-radius: 6px;
+        padding: 9px 11px;
+        margin: 9px 0;
+      }
+      .responsive-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 8px 0;
+        display: block;
+        overflow-x: auto;
+      }
+      .responsive-table td, .responsive-table th {
+        border: 1px solid #e7dcc7;
+        padding: 7px 8px;
+        font-size: 13px;
+        vertical-align: top;
+        min-width: 120px;
+      }
+      .responsive-table th {
+        background: #f7eedb;
+        text-align: left;
+      }
+      .small { font-size: 12.6px; }
+      .tiny { font-size: 11.8px; }
+      .footer {
+        position: static;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        color: #866e40;
+      }
+      .activity-box {
+        border: 2px dashed #c5aa71;
+        border-radius: 8px;
+        padding: 10px;
+        min-height: 88px;
+        margin: 8px 0;
+        background: #fffaf0;
+      }
+      .plate-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .plate-cell {
+        border: 1px solid #d9c7a0;
+        border-radius: 20px;
+        min-height: 70px;
+        padding: 8px;
+        text-align: center;
+        background: #fffdf7;
+      }
+      .maze {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 3px;
+        margin-top: 8px;
+      }
+      .maze div {
+        border: 1px solid #cdb382;
+        min-height: 24px;
+        background: #fff;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="page cover">
+      <h1>Christian Passover Seder</h1>
+      <h2>基督徒家庭逾越节晚餐手册</h2>
+      <p class="subtitle">A bilingual family guide for hosting a simple, Christ-centered Passover meal with Scripture, readings, blessings, meal flow, and children’s activities.<br>一本适合家庭使用的中英双语逾越节晚餐手册，包含经文、朗读、祝福、流程与儿童活动。</p>
+      <p class="subtitle"><strong>Theme | 主题:</strong> Remembering God’s rescue in Exodus and celebrating Jesus our Passover Lamb.<br><strong>记念：</strong> 记念上帝在出埃及中的拯救，并庆贺耶稣这位逾越节的羔羊。</p>
+      <p class="subtitle"><strong>Made in 2026 by “Loved to love” - Zheng family</strong><br><strong>由“被神爱而有能力爱的”晨炜家制作于2026年</strong></p>
+      <div class="footer"><span>Cover</span><span>Page 1</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🕯️ PAGE 2 — Candle Lighting</h2><div class="cn">点烛仪式</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “God brings light into the world and into our lives.”</p>
+          <p><strong>All:</strong> “Jesus is our Light.”</p>
+          <div class="verse"><strong>John 8:12 (KJV)</strong><br>“Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.”</div>
+          <div class="callout">
+            <p><strong>How to lead:</strong></p>
+            <ol>
+              <li>Dim the room lights.</li>
+              <li>Light two candles.</li>
+              <li>Pause for a moment of quiet gratitude.</li>
+              <li>Say the opening lines together.</li>
+            </ol>
+          </div>
+          <p><strong>Short Prayer:</strong> Lord Jesus, thank You for bringing light, truth, and hope into our home tonight. Amen.</p>
+          <div class="verse"><strong>John 1:5 (KJV)</strong><br>“And the light shineth in darkness; and the darkness comprehended it not.”</div>
+          <p class="small"><strong>Illustration:</strong> Two candles with a soft glow, with a child helping an adult.</p>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“上帝将光带进世界，也带进我们的生命。”</p>
+          <p><strong>全体：</strong>“耶稣是我们的光。”</p>
+          <div class="verse"><strong>约翰福音 8:12（中文意译）</strong><br>“耶稣又对众人说：我是世界的光；跟从我的，就不在黑暗里走，必要得着生命的光。”</div>
+          <div class="callout">
+            <p><strong>带领方式：</strong></p>
+            <ol>
+              <li>将房间灯光调暗。</li>
+              <li>点燃两支蜡烛。</li>
+              <li>安静片刻，向主献上感谢。</li>
+              <li>一起朗读开场回应词。</li>
+            </ol>
+          </div>
+          <p><strong>简短祷告：</strong>主耶稣，感谢祢将光、真理和盼望带进我们的家。阿们。</p>
+          <div class="verse"><strong>约翰福音 1:5（中文意译）</strong><br>“光照在黑暗里，黑暗却不能胜过光。”</div>
+          <p class="small"><strong>插图说明：</strong> 两支温柔发光的蜡烛，孩子与大人一同点烛。</p>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 2</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍷 PAGE 3 — Cup 1: Sanctification</h2><div class="cn">第一杯：成圣之杯</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “God sets us apart as His people.”</p>
+          <p><strong>All:</strong> “We belong to God.”</p>
+          <div class="verse"><strong>Exodus 6:6–7 (KJV)</strong><br>“I am the LORD, and I will bring you out from under the burdens of the Egyptians… And I will take you to me for a people, and I will be to you a God.”</div>
+          <p><strong>Meaning:</strong> This first cup remembers that God calls His people out and makes them His own. As Christians, we remember that we are holy because we belong to Christ.</p>
+          <p><strong>Blessing:</strong> Blessed are You, O Lord our God, King of the universe, who calls us to be Your people and gives us new life in Christ.</p>
+          <p><strong>Action:</strong> Lift the cup. Pause. Drink together.</p>
+          <div class="verse"><strong>1 Peter 2:9 (KJV)</strong><br>“Ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people...”</div>
+          <p class="small"><strong>Host note:</strong> Grape juice works well for families.</p>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“上帝将我们分别出来，成为祂的子民。”</p>
+          <p><strong>全体：</strong>“我们属于上帝。”</p>
+          <div class="verse"><strong>出埃及记 6:6–7（中文意译）</strong><br>“我是耶和华；我要把你们从埃及人的重担下领出来……我要以你们为我的百姓，我也要作你们的上帝。”</div>
+          <p><strong>意义：</strong> 第一杯记念上帝呼召祂的百姓出来，并使他们归属于祂。对基督徒而言，我们也记念自己因着基督被分别为圣。</p>
+          <p><strong>祝福词：</strong> 宇宙的主，我们的上帝，当受称颂；祢呼召我们作祢的子民，并在基督里赐给我们新生命。</p>
+          <p><strong>动作：</strong> 举起杯，安静片刻，然后一同饮用。</p>
+          <div class="verse"><strong>彼得前书 2:9（中文意译）</strong><br>“惟有你们是被拣选的族类，是有君尊的祭司，是圣洁的国度，是属上帝的子民……”</div>
+          <p class="small"><strong>主办提示：</strong> 家庭聚会可用葡萄汁代替酒。</p>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 3</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍽️ PAGE 4 — Tasting the Symbols</h2><div class="cn">品尝象征之物</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> "Let's taste and remember. Each food on this plate tells a part of the story."</p>
+          <p><strong>1. Karpas (Parsley in Salt Water)</strong></p>
+          <p><strong>Host:</strong> Lifts the parsley. "This green reminds us of new life in springtime. But we dip it in salt water to remember the tears of slavery."</p>
+          <div class="verse"><strong>Psalm 126:5 (KJV)</strong><br>"They that sow in tears shall reap in joy."</div>
+          <p><strong>All:</strong> Dip parsley in salt water and eat.</p>
+          <p><strong>2. Maror (Bitter Herbs)</strong></p>
+          <p><strong>Host:</strong> "Now we taste the bitterness of slavery."</p>
+          <div class="verse"><strong>Exodus 1:14 (KJV)</strong><br>"And they made their lives bitter with hard bondage..."</div>
+          <p><strong>All:</strong> Eat a small amount of the bitter herb.</p>
+          <p><strong>3. Charoset (Fruit & Nut Paste)</strong></p>
+          <p><strong>Host:</strong> "This reminds us of the mortar for bricks, but its sweetness speaks of the hope of freedom."</p>
+          <p><strong>All:</strong> Eat the Charoset, often with a piece of matzah.</p>
+          <p><strong>4. Zeroa (Roasted Bone) & Beitzah (Egg)</strong></p>
+          <p><strong>Host:</strong> "The lamb bone reminds us of the Passover lamb, whose blood protected God's people. The egg reminds us of new life and the festival sacrifice."</p>
+          <div class="verse"><strong>1 Corinthians 5:7 (KJV)</strong><br>"For even Christ our passover is sacrificed for us."</div>
+          <p><strong>Note:</strong> We look at these but do not eat them now. The egg can be eaten with the meal.</p>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong> “让我们来品尝和记念。盘中的每一样食物都在诉说一部分故事。”</p>
+          <p><strong>1. Karpas (浸盐水的香菜)</strong></p>
+          <p><strong>带领人：</strong> 举起香菜。“这绿色让我们想起春天的新生命。但我们把它浸在盐水里，是为了记念为奴的泪水。”</p>
+          <div class="verse"><strong>诗篇 126:5（中文意译）</strong><br>“流泪撒种的，必欢呼收割。”</div>
+          <p><strong>全体：</strong> 将香菜浸入盐水后食用。</p>
+          <p><strong>2. Maror (苦菜)</strong></p>
+          <p><strong>带领人：</strong> “现在我们来品尝为奴的苦涩。”</p>
+          <div class="verse"><strong>出埃及记 1:14（中文意译）</strong><br>“他们因服苦役，生活就觉得愁苦……”</div>
+          <p><strong>全体：</strong> 食用少量苦菜。</p>
+          <p><strong>3. Charoset (果仁泥)</strong></p>
+          <p><strong>带领人：</strong> “这让我们想起砌砖的泥，但它的甘甜诉说着自由的盼望。”</p>
+          <p><strong>全体：</strong> 食用果仁泥，通常会搭配一小块无酵饼。</p>
+          <p><strong>4. Zeroa (烤骨) & Beitzah (烤蛋)</strong></p>
+          <p><strong>带领人：</strong> “羊骨让我们想起逾越节的羔羊，它的血保护了上帝的子民。鸡蛋则提醒我们新的生命和节期的献祭。”</p>
+          <div class="verse"><strong>哥林多前书 5:7（中文意译）</strong><br>“因为我们的逾越节羔羊基督，已经为我们被献上了。”</div>
+          <p><strong>注：</strong> 我们现在只看不吃。鸡蛋可以在正餐时食用。</p>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 4</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>📖 PAGE 5 — Exodus Story & The Ten Plagues</h2><div class="cn">出埃及记与十灾</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Narrator:</strong> The people of Israel lived as slaves in Egypt. They cried out, and God heard them.</p>
+          <p><strong>Moses:</strong> “Let my people go!”</p>
+          <p><strong>Pharaoh:</strong> “No!”</p>
+          <p><strong>Narrator:</strong> So God sent ten plagues to show His power and rescue His people.</p>
+          <ol class="small">
+              <li>💧 Water to Blood</li>
+              <li>🐸 Frogs</li>
+              <li>🦟 Gnats</li>
+              <li>🪰 Flies</li>
+              <li>🐄 Livestock Diseased</li>
+              <li>🌋 Boils</li>
+              <li>🌨️ Hail</li>
+              <li>🦗 Locusts</li>
+              <li>⚫ Darkness</li>
+              <li>✝️ Death of Firstborn</li>
+          </ol>
+          <p><strong>Narrator:</strong> After the final plague, Pharaoh let the people go.</p>
+          <p><strong>All:</strong> “God rescued His people!”</p>
+          <div class="verse"><strong>Exodus 12:31 (KJV)</strong><br>“Rise up, and get you forth from among my people… and go, serve the LORD, as ye have said.”</div>
+          <div class="callout">
+            <p><strong>Jesus Connection:</strong> Just as God rescued Israel from slavery, Jesus rescues us from sin and leads us into freedom.</p>
+          </div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>旁白：</strong> 以色列人在埃及作奴仆，他们向上帝呼求，上帝听见了他们的声音。</p>
+          <p><strong>摩西：</strong>“让我的百姓走！”</p>
+          <p><strong>法老：</strong>“不行！”</p>
+          <p><strong>旁白：</strong> 于是上帝降下十灾，以彰显祂的大能并拯救祂的百姓。</p>
+          <ol class="small">
+              <li>💧 血水之灾</li>
+              <li>🐸 青蛙之灾</li>
+              <li>🦟 虱子之灾</li>
+              <li>🪰 苍蝇之灾</li>
+              <li>🐄 畜疫之灾</li>
+              <li>🌋 脓疮之灾</li>
+              <li>🌨️ 冰雹之灾</li>
+              <li>🦗 蝗虫之灾</li>
+              <li>⚫ 黑暗之灾</li>
+              <li>✝️ 长子之死</li>
+          </ol>
+          <p><strong>旁白：</strong> 最终，在第十灾后，法老允许百姓离开。</p>
+          <p><strong>全体：</strong>“上帝拯救了祂的百姓！”</p>
+          <div class="verse"><strong>出埃及记 12:31（中文意译）</strong><br>“起来，从我的民中出去……去事奉耶和华吧，照你们所说的去行。”</div>
+          <div class="callout">
+            <p><strong>与耶稣的连接：</strong> 正如上帝救以色列人脱离奴役，耶稣也救我们脱离罪，带我们进入真正的自由。</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 5</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍷 PAGE 6 — Cup 2: Deliverance</h2><div class="cn">第二杯：拯救之杯</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “God delivers us from what hurts and enslaves us.”</p>
+          <p><strong>All:</strong> “Jesus sets us free.”</p>
+          <div class="verse"><strong>Exodus 6:6 (KJV)</strong><br>“I will rid you out of their bondage, and I will redeem you with a stretched out arm, and with great judgments.”</div>
+          <p><strong>Reflection:</strong> Think quietly: What has God delivered us from—fear, sin, shame, bitterness, danger, or grief?</p>
+          <p><strong>Short Prayer:</strong> Lord, thank You for Your strong arm and saving mercy. Help us walk in freedom.</p>
+          <p><strong>Action:</strong> Lift the second cup and drink together.</p>
+          <div class="callout">
+            <p><strong>Family Sharing Prompt:</strong> Invite two or three people to briefly answer: “Where have I seen God’s help this year?” Keep responses short and thankful.</p>
+          </div>
+          <div class="verse"><strong>John 8:36 (KJV)</strong><br>“If the Son therefore shall make you free, ye shall be free indeed.”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“上帝救我们脱离辖制与伤害。”</p>
+          <p><strong>全体：</strong>“耶稣使我们得自由。”</p>
+          <div class="verse"><strong>出埃及记 6:6（中文意译）</strong><br>“我要救你们脱离他们的奴役，也要用伸出来的膀臂救赎你们。”</div>
+          <p><strong>默想：</strong> 安静思想：上帝曾救我们脱离什么？是惧怕、罪、羞耻、苦毒、危险，还是忧伤？</p>
+          <p><strong>简短祷告：</strong> 主啊，感谢祢以大能的膀臂施行拯救，求祢帮助我们活在自由里。</p>
+          <p><strong>动作：</strong> 举起第二杯，一同饮用。</p>
+          <div class="callout">
+            <p><strong>家庭分享提示：</strong> 可邀请两三位家人简短回答：“今年我在哪些事上经历了上帝的帮助？” 让分享简短并以感恩为主。</p>
+          </div>
+          <div class="verse"><strong>约翰福音 8:36（中文意译）</strong><br>“所以天父的儿子若叫你们自由，你们就真自由了。”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 6</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>✝️ PAGE 7 — The Last Supper & The Cross</h2><div class="cn">最后的晚餐与十字架</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Host:</strong> “Jesus shared a Passover meal with His disciples. During that meal, He took the bread and cup and showed that the story of rescue was pointing to Him.”</p>
+          <div class="verse"><strong>Matthew 26:26–28 (KJV)</strong><br>“Jesus took bread, and blessed it, and brake it, and gave it to the disciples... And he took the cup... saying... this is my blood of the new testament, which is shed for many for the remission of sins.”</div>
+          <div class="callout">
+            <p><strong>Gentle words for children:</strong></p>
+            <p class="small">Jesus went to the cross because He loves us very much. He felt real pain and sadness, but He chose to give Himself for us so we could be brought close to God and forgiven.</p>
+          </div>
+          <div class="callout">
+            <p><strong>Meaning for friends who are new to faith:</strong></p>
+            <p class="small">The Bible teaches that sin breaks our relationship with a holy God. Jesus did not die because He had done wrong, but because we had. On the cross He took our place, bearing suffering and judgment, so that we could be justified—made right with God by grace, not by our own goodness.</p>
+          </div>
+          <div class="verse"><strong>Isaiah 53:5 (KJV)</strong><br>“But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.”</div>
+          <div class="verse"><strong>Romans 5:8–9 (KJV)</strong><br>“But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us... being now justified by his blood, we shall be saved from wrath through him.”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>带领人：</strong>“耶稣与门徒所吃的最后晚餐，就是逾越节晚餐。在那一餐中，祂拿起饼和杯，显明这整个拯救的故事最终都指向祂自己。”</p>
+          <div class="verse"><strong>马太福音 26:26–28（中文意译）</strong><br>“耶稣拿起饼来，祝福，就掰开，递给门徒……又拿起杯来……说：这是我立约的血，为多人流出来，使罪得赦。”</div>
+          <div class="callout">
+            <p><strong>对孩子温柔的说明：</strong></p>
+            <p class="small">耶稣上十字架，是因为祂非常爱我们。祂真实地经历了痛苦和忧伤，但祂甘愿这样做，为要把我们带回上帝面前，使我们得赦免。</p>
+          </div>
+          <div class="callout">
+            <p><strong>对未信主朋友的意义：</strong></p>
+            <p class="small">圣经说，罪使我们与圣洁的上帝隔绝。耶稣受死，不是因为祂做错了什么，而是因为我们有罪。祂在十字架上代替我们承担痛苦与审判，好让我们因着恩典被称为义，不是靠自己的好行为，乃是靠祂为我们所成就的。</p>
+          </div>
+          <div class="verse"><strong>以赛亚书 53:5（中文意译）</strong><br>“哪知祂为我们的过犯受害，为我们的罪孽压伤；因祂受的刑罚我们得平安，因祂受的鞭伤我们得医治。”</div>
+          <div class="verse"><strong>罗马书 5:8–9（中文意译）</strong><br>“惟有基督在我们还作罪人的时候为我们死，上帝的爱就在此向我们显明了……现在我们既靠着祂的血称义，就更要借着祂免去上帝的忿怒。”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 7</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍞 PAGE 8 — Breaking the Matzah & Afikomen</h2><div class="cn">掰无酵饼与 Afikomen</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “After remembering Jesus at the Passover table, we now break the matzah as He broke the bread and gave thanks. This broken bread reminds us of His body, given for us.”</p>
+          <div class="verse"><strong>Luke 22:19 (KJV)</strong><br>“And he took bread, and gave thanks, and brake it, and gave unto them, saying, This is my body which is given for you: this do in remembrance of me.”</div>
+          <p><strong>How to do it:</strong></p>
+          <ol>
+            <li>Hold up the matzah and thank God for His provision.</li>
+            <li>Break it in two pieces.</li>
+            <li>Wrap one piece in a napkin and hide it as the Afikomen.</li>
+            <li>Keep the other piece to share later.</li>
+          </ol>
+          <div class="callout">
+            <p><strong>Afikomen Search:</strong> After the meal, children search for the hidden piece. The finder may receive a small prize or lead the next blessing.</p>
+          </div>
+          <p class="small"><strong>Afikomen explained — origin & meaning:</strong> The word likely comes from the Greek <em>ἀφικόμενον</em> (afikomenon), meaning “that which comes after” (an after‑meal portion). Jewish and Aramaic forms (often spelled <em>afikoman</em>) appear in later tradition; the term refers to a matzah portion set aside and eaten later. Symbolically, the Afikomen is a broken and hidden piece of matzah that children search for: it makes the Seder playful and participatory, recalls the Passover meal, points forward (for Christians) to Christ’s broken body and coming redemption, and creates a moment of joyful anticipation and intergenerational connection.</p>
+          <div class="verse"><strong>John 6:35 (KJV)</strong><br>“I am the bread of life: he that cometh to me shall never hunger...”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“当我们刚刚记念耶稣在逾越节餐桌上的话语之后，现在我们也像祂那样掰开无酵饼、献上感谢。这被掰开的饼使我们想起祂为我们舍去的身体。”</p>
+          <div class="verse"><strong>路加福音 22:19（中文意译）</strong><br>“祂拿起饼来，祝谢了，就掰开，递给他们，说：这是为你们舍的我的身体；你们也应当如此行，为的是记念我。”</div>
+          <p><strong>进行方式：</strong></p>
+          <ol>
+            <li>举起无酵饼，为上帝的供应献上感谢。</li>
+            <li>把饼掰成两半。</li>
+            <li>将其中一半用餐巾包起来，藏起来，作为 Afikomen。</li>
+            <li>另一半留待稍后分给大家。</li>
+          </ol>
+          <div class="callout">
+            <p><strong>寻找 Afikomen：</strong> 饭后让孩子们寻找藏起来的那一块。找到的人可以得到一个小奖品，或带领下一段祝福。</p>
+          </div>
+          <p class="small"><strong>Afikomen 说明与词源：</strong> 该词可能源自希腊语 <em>ἀφικόμενον</em>（afikomenon），意为“随后而来之物”（饭后之份）；在晚期犹太/阿拉米语传统中也有类似写法（afikoman）。象征上，Afikomen 是一块被掰开、包好并藏起来的无酵饼：它让逾越节既好玩又具参与性，提醒我们逾越节的餐点意义；对基督徒而言，它也指向基督被掰开的身体与将来要成全的救赎，同时成为家庭中传承与期待的时刻。</p>
+          <div class="verse"><strong>约翰福音 6:35（中文意译）</strong><br>“我就是生命的粮；到我这里来的，必定不饿……”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 8</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍷 PAGE 9 — Cup 3: Redemption</h2><div class="cn">第三杯：救赎之杯</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “This is the cup of redemption.”</p>
+          <p><strong>All:</strong> “Jesus redeems us.”</p>
+          <div class="verse"><strong>Luke 22:20 (KJV)</strong><br>“This cup is the new testament in my blood, which is shed for you.”</div>
+          <div class="verse"><strong>1 Peter 1:18–19 (KJV)</strong><br>“Forasmuch as ye know that ye were not redeemed with corruptible things… But with the precious blood of Christ, as of a lamb without blemish and without spot.”</div>
+          <p><strong>Reflection:</strong> In the Passover meal, this cup points most clearly to the work of Jesus at the Last Supper and at the cross.</p>
+          <p><strong>Action:</strong> Read the verse aloud. Lift the cup together. Drink reverently.</p>
+          <div class="verse"><strong>Hebrews 9:12 (KJV)</strong><br>“...by his own blood he entered in once into the holy place, having obtained eternal redemption for us.”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“这是救赎之杯。”</p>
+          <p><strong>全体：</strong>“耶稣救赎我们。”</p>
+          <div class="verse"><strong>路加福音 22:20（中文意译）</strong><br>“这杯是用我为你们流出的血所立的新约。”</div>
+          <div class="verse"><strong>彼得前书 1:18–19（中文意译）</strong><br>“你们得赎，不是凭着能坏的金银，乃是凭着基督宝贵的血，如同无瑕疵、无玷污的羔羊之血。”</div>
+          <p><strong>默想：</strong> 在逾越节晚餐中，这一杯最清楚地指向耶稣在最后晚餐和十字架上的工作。</p>
+          <p><strong>动作：</strong> 大声朗读经文，举起杯子，带着敬畏一同饮用。</p>
+          <div class="verse"><strong>希伯来书 9:12（中文意译）</strong><br>“祂乃用自己的血，只一次进入圣所，成了永远赎罪的事。”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 9</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🎶 PAGE 10 — Song Time & Lyrics</h2><div class="cn">诗歌时间与歌词</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Choose one or two songs:</strong></p>
+          <ul>
+            <li><strong>Go Down, Moses</strong></li>
+            <li><strong>Doxology</strong></li>
+            <li><strong>This Little Light of Mine</strong> (short refrain only, optional)</li>
+          </ul>
+          <div class="callout">
+            <p><strong>Go Down, Moses</strong></p>
+            <p class="tiny">When Israel was in Egypt's land,<br>
+            Let my people go;<br>
+            Oppress'd so hard they could not stand,<br>
+            Let my people go.</p>
+            <p class="tiny"><strong>Chorus:</strong><br>
+            Go down, Moses,<br>
+            Way down in Egypt's land;<br>
+            Tell old Pharaoh<br>
+            To let my people go.</p>
+          </div>
+          <div class="callout">
+            <p><strong>Doxology</strong></p>
+            <p class="tiny">Praise God, from whom all blessings flow;<br>
+            Praise Him, all creatures here below;<br>
+            Praise Him above, ye heavenly host;<br>
+            Praise Father, Son, and Holy Ghost. Amen.</p>
+          </div>
+          <div class="verse"><strong>Psalm 105:1 (KJV)</strong><br>“O give thanks unto the LORD; call upon his name: make known his deeds among the people.”</div>
+          <div class="verse"><strong>Psalm 113:1 (KJV)</strong><br>“Praise ye the LORD. Praise, O ye servants of the LORD, praise the name of the LORD.”</div>
+          <p><strong>Host Tip:</strong> Keep this part joyful and simple. Children can clap, wave candles made of paper, or use rhythm sticks.</p>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>可选择一到两首诗歌：</strong></p>
+          <ul>
+            <li><strong>《下去吧，摩西》</strong></li>
+            <li><strong>《荣耀颂》</strong></li>
+            <li><strong>《小小的光》</strong>（只唱简短副歌，可选）</li>
+          </ul>
+          <div class="callout">
+            <p><strong>《下去吧，摩西》</strong></p>
+            <p class="tiny">当以色列人在埃及地时，<br>
+            让我的百姓走；<br>
+            他们受压太重，站立不住，<br>
+            让我的百姓走。</p>
+            <p class="tiny"><strong>副歌：</strong><br>
+            下去吧，摩西，<br>
+            下到埃及地；<br>
+            告诉老法老，<br>
+            让我的百姓走。</p>
+          </div>
+          <div class="callout">
+            <p><strong>《荣耀颂》</strong></p>
+            <p class="tiny">赞美上帝，万福之源；<br>
+            地上万民都当赞美；<br>
+            天上万军都当赞美；<br>
+            赞美圣父、圣子、圣灵。阿们。</p>
+          </div>
+          <div class="verse"><strong>诗篇 105:1（中文意译）</strong><br>“你们要称谢耶和华，求告祂的名，在万民中传扬祂的作为。”</div>
+          <div class="verse"><strong>诗篇 113:1（中文意译）</strong><br>“你们要赞美耶和华！耶和华的仆人哪，你们要赞美耶和华的名！”</div>
+          <p><strong>主办提示：</strong> 这一段保持轻松喜乐即可。孩子们可以拍手、挥动纸蜡烛，或使用节奏棒。</p>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 10</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍽️ PAGE 11 — Meal Blessing</h2><div class="cn">饭前祝福</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “Thank You, God, for this meal and for rescuing us.”</p>
+          <div class="verse"><strong>Psalm 136:1 (KJV)</strong><br>“O give thanks unto the LORD; for he is good: for his mercy endureth for ever.”</div>
+          <div class="verse"><strong>Deuteronomy 8:10 (KJV)</strong><br>“When thou hast eaten and art full, then thou shalt bless the LORD thy God...”</div>
+          <p><strong>Meal Prayer:</strong> Heavenly Father, thank You for bread, for family, for this table, and for the salvation You have given through Jesus. Bless this food and our fellowship tonight. Amen.</p>
+          <p><strong>Suggested Meal Flow:</strong></p>
+          <ul>
+            <li>Serve the main meal.</li>
+            <li>Invite each person to share one gratitude.</li>
+            <li>Keep conversation centered on God’s faithfulness.</li>
+          </ul>
+          <div class="callout">
+            <p><strong>Table Questions:</strong></p>
+            <ul>
+              <li>What part of the Exodus story stood out most tonight?</li>
+              <li>What food or symbol helped you remember Jesus?</li>
+              <li>What prayer do you want to carry into the coming year?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“上帝，谢谢祢赐下食物，也拯救我们。”</p>
+          <div class="verse"><strong>诗篇 136:1（中文意译）</strong><br>“你们要称谢耶和华，因为祂本为善；祂的慈爱永远长存。”</div>
+          <div class="verse"><strong>申命记 8:10（中文意译）</strong><br>“你吃得饱足，就要称颂耶和华你的上帝……”</div>
+          <p><strong>饭前祷告：</strong> 天父，感谢祢赐给我们饼、家人、餐桌，也感谢祢借着耶稣赐下救恩。求祢赐福今晚的食物和团契。阿们。</p>
+          <p><strong>建议用餐流程：</strong></p>
+          <ul>
+            <li>开始享用主餐。</li>
+            <li>邀请每个人分享一件感恩的事。</li>
+            <li>让谈话围绕上帝的信实与恩典。</li>
+          </ul>
+          <div class="callout">
+            <p><strong>餐桌问题：</strong></p>
+            <ul>
+              <li>今晚出埃及故事中，哪一部分最打动你？</li>
+              <li>哪一样食物或象征最帮助你记念耶稣？</li>
+              <li>你想带进新一年的祷告是什么？</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 11</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍷 PAGE 12 — Cup 4: Praise & Cup 5: Hope</h2><div class="cn">第四杯：赞美与第五杯：盼望</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “We praise God for His promises.”</p>
+          <p><strong>All:</strong> “God keeps His promises!”</p>
+          <div class="verse"><strong>Psalm 107:1 (KJV)</strong><br>“O give thanks unto the LORD, for he is good: for his mercy endureth for ever.”</div>
+          <div class="verse"><strong>Psalm 113:2–3 (KJV)</strong><br>“Blessed be the name of the LORD from this time forth and for evermore. From the rising of the sun unto the going down of the same the LORD'S name is to be praised.”</div>
+          <p><strong>Response Prayer:</strong> Lord, You are faithful. Thank You for keeping every promise and completing salvation through Jesus.</p>
+          <p><strong>Action:</strong> Lift the fourth cup and praise God together.</p>
+          <div class="callout">
+            <p><strong>A Note on Elijah's Cup & The Cup of Christ:</strong></p>
+            <p class="tiny">In many Seders, a cup is poured for the prophet Elijah, who is expected to return and announce the Messiah. As Christians, we believe the Messiah has already come. Jesus Himself is our hope and our redemption. This final cup is for Him, the one who promises, "Behold, I am with you always."</p>
+          </div>
+          <div class="callout">
+            <p><strong>Optional Fifth Cup — Hope / The Kingdom:</strong></p>
+            <p class="tiny"><strong>给孩子的说明：</strong> 这杯提醒我们，上帝的故事还没有结束。耶稣已经来了，耶稣已经救了我们，耶稣还要再来。有一天，祂要把一切都更新。</p>
+            <p class="tiny"><strong>给大家的意义：</strong> 有些传统会记念上帝第五层应许：“我要领你们进入那地”（出埃及记 6:8）。如果愿意，可以在最后再举起一杯，记念那仍在前面的盼望——上帝国度完全降临，以及羔羊婚筵的实现。</p>
+            <div class="verse"><strong>Matthew 26:29 (KJV)</strong><br>“I will not drink henceforth of this fruit of the vine, until that day when I drink it new with you in my Father's kingdom.”</div>
+            <p class="tiny"><strong>简短回应经文：</strong><br><strong>领袖：</strong> 耶稣还要再来。<br><strong>全体：</strong> 我们带着盼望等候。<br><strong>领袖：</strong> 上帝要将万有更新。<br><strong>全体：</strong> 主耶稣啊，我愿祢来。</p>
+            <p class="tiny"><strong>插图说明：</strong> 一只发光的杯子、明亮的日出，以及一张预备好欢庆筵席的桌子。</p>
+            <p class="tiny"><strong>祷告：</strong> 主耶稣，感谢祢为我们而来，为我们受死，为我们复活，也必要再来接我们。求祢帮助我们在等候的日子里，活在盼望、信心和喜乐中。主耶稣啊，我愿祢来。阿们。</p>
+          </div>
+          <div class="verse"><strong>Psalm 150:6 (KJV)</strong><br>“Let every thing that hath breath praise the LORD. Praise ye the LORD.”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“我们赞美上帝的应许。”</p>
+          <p><strong>全体：</strong>“上帝信实守约！”</p>
+          <div class="verse"><strong>诗篇 107:1（中文意译）</strong><br>“你们要称谢耶和华，因为祂本为善；祂的慈爱永远长存。”</div>
+          <div class="verse"><strong>诗篇 113:2–3（中文意译）</strong><br>“愿耶和华的名从今时直到永远都当受称颂；从日出之地到日落之处，耶和华的名都当受赞美。”</div>
+          <p><strong>回应祷告：</strong> 主啊，祢是信实的。感谢祢坚守每一个应许，并借着耶稣完成救恩。</p>
+          <p><strong>动作：</strong> 举起第四杯，一同赞美上帝。</p>
+          <div class="callout">
+            <p><strong>关于以利亚杯与基督之杯的说明：</strong></p>
+            <p class="tiny">在许多逾越节晚餐中，人们会为先知以利亚倒一杯酒，期盼他回来宣告弥赛亚的来临。作为基督徒，我们相信弥赛亚已经来过。耶稣自己就是我们的盼望和救赎。这最后一杯是为祂而举，祂应许我们：“看哪，我天天与你们同在。”</p>
+          </div>
+          <div class="callout">
+            <p><strong>可选的第五杯——盼望之杯 / 天国之杯：</strong></p>
+            <p class="tiny"><strong>给孩子的说明：</strong> 这杯提醒我们，上帝的故事还没有结束。耶稣已经来了，耶稣已经救了我们，耶稣还要再来。有一天，祂要把一切都更新。</p>
+            <p class="tiny"><strong>给大家的意义：</strong> 有些传统会记念上帝第五层应许：“我要领你们进入那地”（出埃及记 6:8）。如果愿意，可以在最后再举起一杯，记念那仍在前面的盼望——上帝国度完全降临，以及羔羊婚筵的实现。</p>
+            <div class="verse"><strong>马太福音 26:29（中文意译）</strong><br>“从今以后，我不再喝这葡萄汁，直到我在我父的国里同你们喝新的那日子。”</div>
+            <p class="tiny"><strong>简短回应经文：</strong><br><strong>领袖：</strong> 耶稣还要再来。<br><strong>全体：</strong> 我们带着盼望等候。<br><strong>领袖：</strong> 上帝要将万有更新。<br><strong>全体：</strong> 主耶稣啊，我愿祢来。</p>
+            <p class="tiny"><strong>插图说明：</strong> 一只发光的杯子、明亮的日出，以及一张预备好欢庆筵席的桌子。</p>
+            <p class="tiny"><strong>祷告：</strong> 主耶稣，感谢祢为我们而来，为我们受死，为我们复活，也必要再来接我们。求祢帮助我们在等候的日子里，活在盼望、信心和喜乐中。主耶稣啊，我愿祢来。阿们。</p>
+          </div>
+          <div class="verse"><strong>诗篇 150:6（中文意译）</strong><br>“凡有气息的，都要赞美耶和华！你们要赞美耶和华！”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 12</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🙌 PAGE 13 — Closing Blessing</h2><div class="cn">结束祝福</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Leader:</strong> “May God fill our home with peace, joy, and hope.”</p>
+          <div class="verse"><strong>Numbers 6:24–26 (KJV)</strong><br>“The LORD bless thee, and keep thee: The LORD make his face shine upon thee, and be gracious unto thee: The LORD lift up his countenance upon thee, and give thee peace.”</div>
+          <p><strong>Closing Words:</strong> Tonight we remembered the mighty works of God. We also remembered the greater rescue we have in Jesus Christ.</p>
+          <p><strong>All:</strong> “Thanks be to God.”</p>
+          <p class="small"><strong>Optional:</strong> End by praying for children, family members, and friends by name.</p>
+          <div class="callout">
+            <p><strong>Host Note:</strong> The formal meal can end here. The Appendix contains optional family activities. Choose one or two if you want a slower evening, or save them for children during cleanup or for the next day.</p>
+          </div>
+          <div class="verse"><strong>Romans 15:13 (KJV)</strong><br>“Now the God of hope fill you with all joy and peace in believing...”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>领袖：</strong>“愿上帝以平安、喜乐与盼望充满我们的家。”</p>
+          <div class="verse"><strong>民数记 6:24–26（中文意译）</strong><br>“愿耶和华赐福给你，保护你；愿耶和华使祂的脸光照你，赐恩给你；愿耶和华向你仰脸，赐你平安。”</div>
+          <p><strong>结束语：</strong> 今晚我们记念了上帝大能的作为，也记念了我们在耶稣基督里所拥有更大的救恩。</p>
+          <p><strong>全体：</strong>“感谢上帝。”</p>
+          <p class="small"><strong>可选：</strong> 以点名祷告的方式，为孩子、家人和朋友祝福。</p>
+          <div class="callout">
+            <p><strong>主办提示：</strong> 正式的晚餐流程可以在此结束。附录包含可选的家庭活动。如果希望晚上过得慢一些，可以选择一两个活动；或者留给孩子们在清理时或第二天进行。</p>
+          </div>
+          <div class="verse"><strong>罗马书 15:13（中文意译）</strong><br>“但愿使人有盼望的上帝，因信将诸般的喜乐平安充满你们……”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Christian Passover Seder</span><span>Page 13</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2> Glossary of Key Terms</h2><div class="cn">关键词汇解释</div></div>
+      <div class="columns">
+        <div class="col">
+          <p><strong>Matzah (无酵饼)</strong>: Unleavened flatbread, reminding us of the haste of the Exodus.</p>
+          <p><strong>Seder (宴仪)</strong>: The ritual meal with a set order of readings, blessings, and symbolic foods.</p>
+          <p><strong>Haggadah (礼仪书)</strong>: The book or script used at the Seder.</p>
+          <p><strong>Chametz (有酵食物)</strong>: Leavened foods forbidden during Passover.</p>
+          <p><strong>Seder Plate (象征盘)</strong>: A plate holding symbolic items for the story.</p>
+          <p><strong>Karpas (绿菜)</strong>: A green vegetable (like parsley) dipped in salt water to recall tears of slavery.</p>
+          <p><strong>Maror (苦菜)</strong>: Bitter herbs to remember the bitterness of slavery.</p>
+        </div>
+        <div class="col">
+          <p><strong>Charoset (果仁泥)</strong>: A sweet paste symbolizing the mortar used by the Israelites.</p>
+          <p><strong>Zeroa (烤羊骨)</strong>: A roasted bone symbolizing the Paschal lamb.</p>
+          <p><strong>Beitzah (烤蛋)</strong>: A roasted egg symbolizing sacrifice and new life.</p>
+          <p><strong>Four Cups (四杯酒)</strong>: Four cups of wine representing God’s four promises of redemption. Many traditions add a fifth cup symbolizing our hope for the coming kingdom.</p>
+          <p><strong>Kiddush (祝酒词)</strong>: The blessing over wine that sanctifies the meal.</p>
+          <p><strong>Afikomen (阿菲可门)</strong>: A broken piece of matzah that is hidden and then found, which for Christians beautifully foreshadows Christ’s death and resurrection.</p>
+        </div>
+      </div>
+      <div class="footer"><span>Glossary</span><span>Page 14</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>📎 APPENDIX A — Kids & Family Activities</h2><div class="cn">附录 A：儿童与家庭活动</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p>This appendix contains optional activities and worksheets you can use with children and families. These pages are not required parts of the Seder liturgy — choose one or two based on time and energy.</p>
+          <ul>
+            <li>Appendix A1 — Color the Seder Plate</li>
+            <li>Appendix A2 — Family Story Skit</li>
+          </ul>
+          <p class="small">Host tip: If you prefer a shorter evening, skip straight to the Closing Blessing and save these activities for after cleanup or another day.</p>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p>本附录收录可与儿童与家庭一同使用的可选活动页，非逾越节礼仪的必需部分。可根据时间与精力选择一至两项。</p>
+          <ul>
+            <li>附录 A1 — 给逾越节盘涂色</li>
+            <li>附录 A2 — 家庭故事短剧</li>
+          </ul>
+          <p class="small">主办提示：若想压缩晚会流程，可直接结束于结束祝福，将这些活动留作餐后或另日进行。</p>
+        </div>
+      </div>
+      <div class="footer"><span>Appendix A</span><span>Page A</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🎨 APPENDIX A1 — Color the Seder Plate</h2><div class="cn">附录 A1：给逾越节盘涂色</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <div class="callout">
+            <p><strong>How to use this section:</strong> These are optional extras, not required parts of the Seder flow. Choose one activity for a short evening, or several if you want more family time after the meal.</p>
+          </div>
+          <p><strong>Instructions:</strong> Color each section and say what it means.</p>
+          <div class="plate-grid">
+            <div class="plate-cell"><strong>Matzah</strong><br>Fast departure</div>
+            <div class="plate-cell"><strong>Bitter Herb</strong><br>Hard slavery</div>
+            <div class="plate-cell"><strong>Charoset</strong><br>Sweet hope</div>
+            <div class="plate-cell"><strong>Parsley</strong><br>New life</div>
+            <div class="plate-cell"><strong>Lamb Bone</strong><br>Protection</div>
+            <div class="plate-cell"><strong>Egg</strong><br>New beginning</div>
+          </div>
+          <div class="activity-box">
+            <p><strong>Write one sentence:</strong> The item I remember most is __________ because __________.</p>
+          </div>
+          <div class="verse"><strong>Exodus 13:3 (KJV)</strong><br>“Remember this day, in which ye came out from Egypt...”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <div class="callout">
+            <p><strong>本活动区使用方式：</strong> 这是可选补充活动，并不是逾越节流程必须完成的部分。若晚间时间较短，可只选一项；若想延长家庭时光，可多选几项。</p>
+          </div>
+          <p><strong>说明：</strong> 给每个部分涂色，并说出它代表的意义。</p>
+          <div class="plate-grid">
+            <div class="plate-cell"><strong>无酵饼</strong><br>匆忙离开</div>
+            <div class="plate-cell"><strong>苦菜</strong><br>为奴的艰难</div>
+            <div class="plate-cell"><strong>苹果果泥</strong><br>甘甜的盼望</div>
+            <div class="plate-cell"><strong>香菜</strong><br>新的生命</div>
+            <div class="plate-cell"><strong>羊骨</strong><br>保护</div>
+            <div class="plate-cell"><strong>蛋</strong><br>新的开始</div>
+          </div>
+          <div class="activity-box">
+            <p><strong>写一句话：</strong> 我最记得的项目是 __________，因为 __________。</p>
+          </div>
+          <div class="verse"><strong>出埃及记 13:3（中文意译）</strong><br>“你们要记念从埃及为奴之家出来的这日……”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Appendix A</span><span>Page A1</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🎭 APPENDIX A2 — Family Story Skit</h2><div class="cn">附录 A2：家庭故事短剧</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <p><strong>Characters:</strong> Narrator, Moses, Pharaoh, People (can be one or more).</p>
+          <p><strong>Props (Optional):</strong> A staff for Moses, a crown for Pharaoh, blue cloth for the Red Sea.</p>
+          <p><strong>Narrator:</strong> The Israelites were slaves in Egypt, building cities for Pharaoh. They cried to God for help.</p>
+          <p><strong>People:</strong> (Sounding tired) “Lord, save us! This is too hard.”</p>
+          <p><strong>Narrator:</strong> God chose Moses to lead them. Moses went to Pharaoh.</p>
+          <p><strong>Moses:</strong> (Boldly) “The God of Israel says, ‘Let my people go!’”</p>
+          <p><strong>Pharaoh:</strong> (Stubbornly) “No! I will not let them go. They must work harder!”</p>
+          <p><strong>Narrator:</strong> God sent ten plagues. After the final, terrible plague, Pharaoh’s heart was broken.</p>
+          <p><strong>Pharaoh:</strong> (Sadly) “Go! Leave my land. Take your people and serve your God.”</p>
+          <p><strong>Narrator:</strong> But soon, Pharaoh changed his mind and chased them to the Red Sea!</p>
+          <p><strong>People:</strong> (Scared) “We are trapped! The army is behind us and the sea is in front!”</p>
+          <p><strong>Moses:</strong> “Do not be afraid. Stand firm and you will see the deliverance the LORD will bring you today.”</p>
+          <p><strong>Narrator:</strong> Moses lifted his staff, and God parted the sea. The people walked through on dry ground.</p>
+          <p><strong>All:</strong> (Joyfully) “God has rescued His people! He is our strength and our song!”</p>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <p><strong>角色：</strong> 旁白、摩西、法老、百姓（一人或多人）。</p>
+          <p><strong>道具（可选）：</strong> 摩西的杖，法老的王冠，代表红海的蓝色布料。</p>
+          <p><strong>旁白：</strong> 以色列人在埃及作奴隶，为法老建造城市。他们向上帝呼求帮助。</p>
+          <p><strong>百姓：</strong> （疲惫地）“主啊，救救我们！这太苦了。”</p>
+          <p><strong>旁白：</strong> 上帝拣选摩西来带领他们。摩西去见法老。</p>
+          <p><strong>摩西：</strong> （勇敢地）“以色列的上帝说：‘让我的百姓走！’”</p>
+          <p><strong>法老：</strong> （固执地）“不！我不会让他们走。他们必须更努力地工作！”</p>
+          <p><strong>旁白：</strong> 上帝降下十灾。在最后那场可怕的灾难之后，法老的心都碎了。</p>
+          <p><strong>法老：</strong> （悲伤地）“走吧！离开我的地。带上你们的人民去事奉你们的上帝吧。”</p>
+          <p><strong>旁白：</strong> 但很快，法老就改变了主意，追赶他们到了红海边！</p>
+          <p><strong>百姓：</strong> （害怕地）“我们被困住了！后面是追兵，前面是大海！”</p>
+          <p><strong>摩西：</strong> “不要惧怕，只管站住，看耶和华今天向你们所要施行的救恩。”</p>
+          <p><strong>旁白：</strong> 摩西举起他的杖，上帝就分开了红海。百姓走在干地上穿了过去。</p>
+          <p><strong>全体：</strong> （喜乐地）“上帝拯救了祂的百姓！祂是我们的力量，我们的诗歌！”</p>
+        </div>
+      </div>
+      <div class="footer"><span>Appendix A</span><span>Page A2</span></div>
+    </section>
+
+    <section class="page">
+      <div class="page-header"><h2>🍎 APPENDIX B — Recipes</h2><div class="cn">附录 B：食谱</div></div>
+      <div class="columns">
+        <div class="col">
+          <h3>English</h3>
+          <table class="responsive-table tiny">
+            <tr><th colspan="2">Charoset</th></tr>
+            <tr><td>Ingredients</td><td>2 apples, 1/2 cup walnuts, 1 tsp cinnamon, 1 tbsp honey, optional grape juice</td></tr>
+            <tr><td>Directions</td><td>Chop apples and walnuts. Mix with cinnamon and honey. Chill before serving.</td></tr>
+            <tr><td>Meaning</td><td>Sweetness after sorrow; hope in the middle of remembrance.</td></tr>
+          </table>
+          <table class="responsive-table tiny">
+            <tr><th colspan="2">Matzo Ball Soup</th></tr>
+            <tr><td>Ingredients</td><td>1 cup matzo meal, 4 eggs, 1/4 cup oil, 4 tbsp broth, salt, pepper</td></tr>
+            <tr><td>Directions</td><td>Mix ingredients, chill briefly, form small balls, simmer in broth 20–30 minutes.</td></tr>
+            <tr><td>Tip</td><td>Do not overcrowd the pot; the balls expand as they cook.</td></tr>
+          </table>
+          <div class="verse"><strong>Psalm 34:8 (KJV)</strong><br>“O taste and see that the LORD is good: blessed is the man that trusteth in him.”</div>
+        </div>
+        <div class="col">
+          <h3>中文</h3>
+          <table class="responsive-table tiny">
+            <tr><th colspan="2">苹果果泥</th></tr>
+            <tr><td>材料</td><td>苹果 2 个、核桃 1/2 杯、肉桂粉 1 茶匙、蜂蜜 1 汤匙、可选少量葡萄汁</td></tr>
+            <tr><td>做法</td><td>将苹果和核桃切碎，加入肉桂粉与蜂蜜拌匀，冷藏后食用。</td></tr>
+            <tr><td>意义</td><td>在忧伤之后仍有甘甜，在记念中仍有盼望。</td></tr>
+          </table>
+          <table class="responsive-table tiny">
+            <tr><th colspan="2">无酵饼丸子汤</th></tr>
+            <tr><td>材料</td><td>无酵饼粉 1 杯、鸡蛋 4 个、油 1/4 杯、鸡汤 4 汤匙、盐、胡椒</td></tr>
+            <tr><td>做法</td><td>将材料混合，稍微冷藏后搓成小丸子，放入鸡汤中煮 20–30 分钟。</td></tr>
+            <tr><td>提示</td><td>锅里不要放太满，因为丸子煮的时候会膨胀。</td></tr>
+          </table>
+          <div class="verse"><strong>诗篇 34:8（中文意译）</strong><br>“你们要尝尝主恩的滋味，便知道祂是美善；投靠祂的人有福了。”</div>
+        </div>
+      </div>
+      <div class="footer"><span>Appendix B</span><span>Page B1</span></div>
+    </section>
+
+    <section class="page back-cover">
+      <h1>Next Year in God’s Kingdom of Peace</h1>
+      <h2>愿明年我们在上帝的平安国度里相聚</h2>
+      <p class="subtitle">May the Lord fill your home with peace, joy, and hope.<br>愿主以平安、喜乐与盼望充满你们的家。</p>
+      <p class="subtitle">Made in 2026 by “Loved to love” - Zheng family<br>由“被神爱而有能力爱的”晨炜家制作于2026年</p>
+      <div class="footer"><span>Back Cover</span><span>Page 15</span></div>
+    </section>
+  </body>
+  </html>
